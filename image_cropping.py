@@ -20,7 +20,7 @@ x_size, y_size = img.shape
 #Suppose we want to display the central third of the image WRT to x and y:
 min_x = int (x_size/4)
 max_x = x_size - min_x
-min_y = int (y_size/4)
+min_y = int (y_size/3)
 max_y = y_size - min_y
 
 cropped_img = img [min_x : max_x , min_y : max_y]
