@@ -9,7 +9,7 @@ img = plt.imread ("LowDoseCT.tif")
 
 #Display original image
 original_image = plt.figure()
-original_image.suptitle("Low Dose CT Scan")
+original_image.suptitle("Original Image")
 original_image = plt.axis('off')
 original_image = plt.imshow(img,cmap='gray')
 original_image = plt.show()
@@ -18,13 +18,16 @@ original_image = plt.show()
 x_size, y_size = img.shape
 
 #Suppose we want to display the central third of the image WRT to x and y:
-min_x = int (x_size/3)
+min_x = int (x_size/4)
 max_x = x_size - min_x
-min_y = int (y_size/3)
-max_y = y_size - min_x
+min_y = int (y_size/4)
+max_y = y_size - min_y
 
 cropped_img = img [min_x : max_x , min_y : max_y]
 
 #display cropped image:
-plt.imshow (cropped_img)
-plt.show()
+cropped_image = plt.figure()
+cropped_image.suptitle("Cropped Image")
+cropped_image = plt.axis('off')
+cropped_image = plt.imshow (cropped_img,cmap='gray')
+cropped_image = plt.show()
