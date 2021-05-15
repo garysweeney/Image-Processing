@@ -4,8 +4,8 @@ from PIL import Image
 import cv2
 
 #Load the image and sub-image (I used .tif files):
-img = plt.imread ("image_name.tif")
-sub_img = plt.imread ("subimage_name.tif")
+img = plt.imread ("moon.tif")
+sub_img = plt.imread ("little-moon.tif")
 
 #Can introduce Gaussian noise:
 """std_dev = 60
