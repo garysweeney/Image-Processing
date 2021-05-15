@@ -5,7 +5,7 @@ from PIL import Image
 from math import ceil
 
 #Open image (I used a .tif file):
-img = plt.imread ("LowDoseCT.tif")
+img = plt.imread ("moon.tif")
 
 #Display original image
 original_image = plt.figure()
